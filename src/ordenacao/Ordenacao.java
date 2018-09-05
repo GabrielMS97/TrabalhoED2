@@ -55,7 +55,7 @@ public class Ordenacao {
         int vetorSaida3[] = m.ordena(vetor);
         int vetorSaida1[] = b.ordena(vetor);   */
         
-        Integer tam = 10;
+        Integer tam = 1000;
         String diretorioArquivo = "/ice/Downloads/deputies_dataset_tratado.csv";
         BufferedReader leitor = null;
         String delimitador = ";";
@@ -110,7 +110,7 @@ public class Ordenacao {
         Hashing h = new Hashing();
         Gasto gastosH [] = h.tHash(gastos);
         for (int i = 0; i < tam; i++) {
-            System.out.println(gastosH[i].getReceipt_value());
+            System.out.println(gastosH[i].getDeputy_name()+ "," + i);
         }
     }
 
